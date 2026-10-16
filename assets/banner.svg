@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d17" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.0" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- CSS Animations -->
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.08); }
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(8px); }
+      }
+      @keyframes flowDash {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes blinkNode {
+        0%, 100% { r: 4px; opacity: 0.6; }
+        50% { r: 6.5px; opacity: 1; filter: drop-shadow(0 0 6px #38bdf8); }
+      }
+      .anim-pulse { animation: pulseGlow 6s ease-in-out infinite; transform-origin: center; }
+      .anim-float1 { animation: floatSlow 5s ease-in-out infinite; }
+      .anim-float2 { animation: floatReverse 6s ease-in-out infinite; }
+      .anim-flow { stroke-dasharray: 8 8; animation: flowDash 12s linear infinite; }
+      .anim-blink1 { animation: blinkNode 3s ease-in-out infinite; }
+      .anim-blink2 { animation: blinkNode 3s ease-in-out infinite 1.5s; }
+      .title-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      .sub-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+      }
+      .pill-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGradient)" />
+
+  <!-- Subtle Grid overlay -->
+  <g opacity="0.07" stroke="#94a3b8" stroke-width="1">
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+    <line x1="150" y1="0" x2="150" y2="420" />
+    <line x1="300" y1="0" x2="300" y2="420" />
+    <line x1="450" y1="0" x2="450" y2="420" />
+    <line x1="600" y1="0" x2="600" y2="420" />
+    <line x1="750" y1="0" x2="750" y2="420" />
+    <line x1="900" y1="0" x2="900" y2="420" />
+    <line x1="1050" y1="0" x2="1050" y2="420" />
+  </g>
+
+  <!-- Dynamic Animated Ambient Glows (strictly background layer) -->
+  <circle cx="200" cy="120" r="140" fill="url(#glowGrad)" class="anim-pulse" filter="url(#softGlow)" />
+  <circle cx="1020" cy="300" r="160" fill="url(#glowGrad)" class="anim-pulse" filter="url(#softGlow)" />
+
+  <!-- Animated Automation Circuit Pipeline Tracks (background layer) -->
+  <g opacity="0.4">
+    <!-- Curved flow line 1 -->
+    <path d="M 60 210 C 250 110, 400 310, 600 210 C 800 110, 950 310, 1140 210" fill="none" stroke="url(#accentGrad1)" stroke-width="2.5" class="anim-flow" />
+    <!-- Secondary flow line 2 -->
+    <path d="M 100 320 C 350 360, 500 80, 750 160 C 920 220, 1050 120, 1150 150" fill="none" stroke="url(#accentGrad2)" stroke-width="1.8" stroke-dasharray="6 6" class="anim-flow" opacity="0.6" />
+  </g>
+
+  <!-- Node points on circuit -->
+  <circle cx="270" cy="180" r="4" fill="#38bdf8" class="anim-blink1" />
+  <circle cx="600" cy="210" r="5" fill="#818cf8" class="anim-blink2" />
+  <circle cx="930" cy="240" r="4" fill="#c084fc" class="anim-blink1" />
+
+  <!-- Ambient Dynamic Floating Pills (Positioned safely away from center title) -->
+  <!-- Top Left Pill -->
+  <g class="anim-float1" transform="translate(60, 45)">
+    <rect width="180" height="38" rx="19" fill="#1e293b" fill-opacity="0.85" stroke="#38bdf8" stroke-width="1.2" filter="url(#glow)" />
+    <text x="90" y="24" fill="#7dd3fc" text-anchor="middle" class="pill-text">🤖 RPA Digital Workers</text>
+  </g>
+
+  <!-- Top Right Pill -->
+  <g class="anim-float2" transform="translate(950, 45)">
+    <rect width="190" height="38" rx="19" fill="#1e293b" fill-opacity="0.85" stroke="#a855f7" stroke-width="1.2" filter="url(#glow)" />
+    <text x="95" y="24" fill="#d8b4fe" text-anchor="middle" class="pill-text">⚡ Browser Automation</text>
+  </g>
+
+  <!-- Bottom Left Pill -->
+  <g class="anim-float2" transform="translate(70, 340)">
+    <rect width="185" height="38" rx="19" fill="#1e293b" fill-opacity="0.85" stroke="#10b981" stroke-width="1.2" />
+    <text x="92" y="24" fill="#6ee7b7" text-anchor="middle" class="pill-text">🧪 Acceptance Testing</text>
+  </g>
+
+  <!-- Bottom Right Pill -->
+  <g class="anim-float1" transform="translate(945, 340)">
+    <rect width="195" height="38" rx="19" fill="#1e293b" fill-opacity="0.85" stroke="#f59e0b" stroke-width="1.2" />
+    <text x="97" y="24" fill="#fcd34d" text-anchor="middle" class="pill-text">🧠 AI Agentic Workflows</text>
+  </g>
+
+  <!-- Central Foreground Content (Strictly in foreground, elevated z-order) -->
+  <g id="foreground-content">
+    <!-- Category Badge -->
+    <g transform="translate(600, 115)">
+      <rect x="-140" y="-16" width="280" height="32" rx="16" fill="#1e1b4b" fill-opacity="0.9" stroke="#6366f1" stroke-width="1.2" />
+      <text x="0" y="5" fill="#a5b4fc" text-anchor="middle" class="pill-text" letter-spacing="1">🚀 THE DEFINITIVE DIRECTORY</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="190" text-anchor="middle" fill="#ffffff" class="title-text" font-size="46" filter="drop-shadow(0 4px 14px rgba(0,0,0,0.8))">
+      Awesome <tspan fill="url(#accentGrad1)">Test Automation</tspan> &amp; <tspan fill="#38bdf8">RPA</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="235" text-anchor="middle" fill="#94a3b8" class="sub-text" font-size="19" filter="drop-shadow(0 2px 8px rgba(0,0,0,0.7))">
+      Enterprise SaaS Platforms • Open-Source Frameworks • AI Browser Agents
+    </text>
+
+    <!-- Divider Bar -->
+    <g transform="translate(600, 260)">
+      <line x1="-160" y1="0" x2="160" y2="0" stroke="url(#accentGrad1)" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="0" cy="0" r="4.5" fill="#38bdf8" />
+    </g>
+
+    <!-- Stat/Highlight Footnote -->
+    <text x="600" y="295" text-anchor="middle" fill="#cbd5e1" class="sub-text" font-size="14.5" font-weight="500">
+      Curated ecosystem of market leaders, battle-tested open source engines, and modern agentic tools
+    </text>
+  </g>
+
+  <!-- Border Accent -->
+  <rect x="0.5" y="0.5" width="1199" height="419" rx="15.5" fill="none" stroke="#334155" stroke-width="1.2" />
+</svg>
