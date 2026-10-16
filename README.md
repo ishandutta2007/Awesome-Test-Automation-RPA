@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Test-Automation-RPA/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Test-Automation-RPA?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Test-Automation-RPA/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Test-Automation-RPA?style=flat-square&logo=github&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Test-Automation-RPA/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Test-Automation-RPA?style=flat-square&logo=github" alt="Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Test-Automation-RPA/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-green.svg?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Test-Automation-RPA/pulse"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=flat-square" alt="Maintenance"/></a>
@@ -68,9 +68,9 @@ The table below lists the major commercial and enterprise SaaS platforms in the 
 
 Open-source automation frameworks form the backbone of modern developer tooling, continuous integration (CI/CD) pipelines, regression testing suites, and autonomous browser agents.
 
-*All repositories are sorted in **descending order by GitHub star count**. Click the star badge beside any repository to inspect its live stargazers on GitHub.*
+*All repositories are sorted in **descending order by GitHub Stars_Count**. Click the Stars_Badge beside any repository to inspect its live stargazers on GitHub.*
 
-| 📦 Repository & Framework | ⭐ GitHub Stars (Live Badge) | 🛠️ Primary Category | 💻 Language / Ecosystem | 🎯 Core Focus & Key Strengths |
+| 📦 Repository & Framework | ⭐ GitHub_Stars (Live Badge) | 🛠️ Primary Category | 💻 Language / Ecosystem | 🎯 Core Focus & Key Strengths |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Browser-Use](https://github.com/browser-use/browser-use)** | [![Stars](https://img.shields.io/github/stars/browser-use/browser-use?style=social&color=white)](https://github.com/browser-use/browser-use/stargazers) | AI Browser RPA Agent | Python | Connects LLMs (GPT-4o, Claude 3.5, Gemini) directly to headless browsers to execute human-like web actions, extract complex dynamic data, and solve multi-step web tasks without fixed selectors. |
 | **[Playwright](https://github.com/microsoft/playwright)** | [![Stars](https://img.shields.io/github/stars/microsoft/playwright?style=social&color=white)](https://github.com/microsoft/playwright/stargazers) | E2E Browser Test Automation | TypeScript / Node.js, Python, Java, C# | Modern standard for web automation across Chromium, WebKit, and Firefox. Features resilient auto-waiting, network interception, Trace Viewer, and native headless execution. |
