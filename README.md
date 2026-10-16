@@ -1,6 +1,6 @@
 # Awesome-Test-Automation-RPA
 
-# Top Test Automation & RPA Tools Ecosystem
+## Top Test Automation & RPA Tools Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Browser Automation, Desktop RPA & Acceptance Testing*  
